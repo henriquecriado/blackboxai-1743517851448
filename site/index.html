@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias Hoje</title>
+    <title>Notícias do Interior Paulista</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: {
+                            500: '#FF6B35',
+                            600: '#E05D00',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
@@ -20,14 +30,14 @@
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
-                    <i class="fas fa-newspaper text-blue-600 text-2xl"></i>
-                    <h1 class="text-2xl font-bold text-gray-800">Notícias Hoje</h1>
+                    <i class="fas fa-newspaper text-orange-500 text-2xl"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Notícias Interior SP</h1>
                 </div>
                 <nav class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-blue-600 font-medium">Home</a>
-                    <a href="news.html" class="text-gray-600 hover:text-blue-600">Notícias</a>
-                    <a href="about.html" class="text-gray-600 hover:text-blue-600">Sobre</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contato</a>
+                    <a href="index.html" class="text-orange-500 font-medium nav-link active-link">Home</a>
+                    <a href="news.html" class="text-gray-600 hover:text-orange-500 nav-link">Notícias</a>
+                    <a href="about.html" class="text-gray-600 hover:text-orange-500 nav-link">Sobre</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-orange-500 nav-link">Contato</a>
                 </nav>
                 <button class="md:hidden text-gray-600">
                     <i class="fas fa-bars text-xl"></i>
@@ -37,12 +47,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-blue-600 text-white py-12">
+    <section class="bg-orange-gradient text-white py-16">
         <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">As últimas notícias do Brasil e do mundo</h2>
-                <p class="text-lg mb-6">Fique atualizado com as principais notícias do dia</p>
-                <a href="news.html" class="inline-block bg-white text-blue-600 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition">Ver Notícias</a>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Últimas notícias do interior paulista</h2>
+                <p class="text-lg mb-6">Cobertura completa de Ribeirão Preto, Bauru, São José do Rio Preto e região</p>
+                <a href="news.html" class="btn-orange px-6 py-3 rounded-lg font-medium">Ver Notícias Locais</a>
             </div>
         </div>
     </section>
@@ -53,35 +63,35 @@
             <h2 class="text-2xl font-bold mb-8 text-gray-800">Destaques</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- News Card 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://picsum.photos/600/400?random=1" alt="News image" class="w-full h-48 object-cover">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:shadow-orange-100 transition-all">
+                    <img src="https://images.pexels.com/photos/3764393/pexels-photo-3764393.jpeg" alt="Agricultura no interior" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <span class="text-sm text-blue-600">Política</span>
-                        <h3 class="text-xl font-bold mt-2 mb-3">Novas medidas econômicas anunciadas</h3>
-                        <p class="text-gray-600 mb-4">O governo anunciou hoje um pacote de medidas para estimular a economia...</p>
-                        <a href="article.html" class="text-blue-600 font-medium hover:underline">Ler mais</a>
+                        <span class="text-sm text-orange-500 font-medium">Agricultura</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Colheita recorde de laranja na região</h3>
+                        <p class="text-gray-600 mb-4">Produtores de Bebedouro comemoram safra 20% maior que no ano passado...</p>
+                        <a href="article.html" class="text-orange-500 font-medium hover:underline">Ler mais</a>
                     </div>
                 </div>
                 
                 <!-- News Card 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://picsum.photos/600/400?random=2" alt="News image" class="w-full h-48 object-cover">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:shadow-orange-100 transition-all">
+                    <img src="https://images.pexels.com/photos/3717909/pexels-photo-3717909.jpeg" alt="Festival de inverno" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <span class="text-sm text-blue-600">Esportes</span>
-                        <h3 class="text-xl font-bold mt-2 mb-3">Time brasileiro vence campeonato</h3>
-                        <p class="text-gray-600 mb-4">Com uma vitória por 3 a 1, o time garantiu o título na última rodada...</p>
-                        <a href="article.html" class="text-blue-600 font-medium hover:underline">Ler mais</a>
+                        <span class="text-sm text-orange-500 font-medium">Cultura</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Festival de Inverno em Campos do Jordão</h3>
+                        <p class="text-gray-600 mb-4">Evento traz shows internacionais e gastronomia típica da serra...</p>
+                        <a href="article.html" class="text-orange-500 font-medium hover:underline">Ler mais</a>
                     </div>
                 </div>
                 
                 <!-- News Card 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://picsum.photos/600/400?random=3" alt="News image" class="w-full h-48 object-cover">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:shadow-orange-100 transition-all">
+                    <img src="https://images.pexels.com/photos/3764400/pexels-photo-3764400.jpeg" alt="Infraestrutura" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <span class="text-sm text-blue-600">Tecnologia</span>
-                        <h3 class="text-xl font-bold mt-2 mb-3">Nova atualização do sistema operacional</h3>
-                        <p class="text-gray-600 mb-4">A empresa anunciou a próxima versão com diversas melhorias de desempenho...</p>
-                        <a href="article.html" class="text-blue-600 font-medium hover:underline">Ler mais</a>
+                        <span class="text-sm text-orange-500 font-medium">Infraestrutura</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Nova rodovia ligará Ribeirão a São Carlos</h3>
+                        <p class="text-gray-600 mb-4">Obra deve reduzir tempo de viagem entre as cidades em 40%...</p>
+                        <a href="article.html" class="text-orange-500 font-medium hover:underline">Ler mais</a>
                     </div>
                 </div>
             </div>
@@ -102,43 +112,43 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-orange-600 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Notícias Hoje</h3>
-                    <p class="text-gray-400">O seu portal de notícias confiável e atualizado.</p>
+                    <h3 class="text-xl font-bold mb-4">Notícias Interior SP</h3>
+                    <p class="text-orange-100">A melhor cobertura das cidades do interior paulista</p>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="news.html" class="text-gray-400 hover:text-white">Notícias</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white">Sobre</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contato</a></li>
+                        <li><a href="index.html" class="text-orange-100 hover:text-white">Home</a></li>
+                        <li><a href="news.html" class="text-orange-100 hover:text-white">Notícias</a></li>
+                        <li><a href="about.html" class="text-orange-100 hover:text-white">Sobre</a></li>
+                        <li><a href="contact.html" class="text-orange-100 hover:text-white">Contato</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Categorias</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Política</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Economia</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Esportes</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Tecnologia</a></li>
+                        <li><a href="#" class="text-orange-100 hover:text-white">Cidades</a></li>
+                        <li><a href="#" class="text-orange-100 hover:text-white">Agricultura</a></li>
+                        <li><a href="#" class="text-orange-100 hover:text-white">Educação</a></li>
+                        <li><a href="#" class="text-orange-100 hover:text-white">Saúde</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Redes Sociais</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-orange-100 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-orange-100 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-orange-100 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-orange-100 hover:text-white"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-                <p>&copy; 2023 Notícias Hoje. Todos os direitos reservados.</p>
+                <p>&copy; 2023 Notícias Interior SP. Av. Independência, 456 - Centro, Bauru/SP</p>
             </div>
         </div>
     </footer>
