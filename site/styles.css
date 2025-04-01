@@ -1,0 +1,18 @@
+/* Custom styles for Notícias Hoje */
+/* Tailwind is being used for most styling, this file is for overrides if needed */
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom focus styles for better accessibility */
+*:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Responsive iframe styling */
+iframe {
+    max-width: 100%;
+}
