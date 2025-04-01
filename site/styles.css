@@ -1,18 +1,68 @@
-/* Custom styles for Notícias Hoje */
-/* Tailwind is being used for most styling, this file is for overrides if needed */
-
-/* Smooth scrolling for anchor links */
-html {
-    scroll-behavior: smooth;
+:root {
+    --primary-orange: #FF6B35;
+    --light-orange: #FF8C42;
+    --dark-orange: #E05D00;
+    --pure-white: #FFFFFF;
+    --off-white: #F8F9FA;
+    --text-dark: #2B2D42;
+    --text-muted: #5A5A5A;
 }
 
-/* Custom focus styles for better accessibility */
-*:focus {
-    outline: 2px solid #3b82f6;
-    outline-offset: 2px;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--pure-white);
+    color: var(--text-dark);
 }
 
-/* Responsive iframe styling */
-iframe {
-    max-width: 100%;
+/* Button Styles */
+.btn-orange {
+    background-color: var(--primary-orange);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-orange:hover {
+    background-color: var(--dark-orange);
+}
+
+/* Backgrounds */
+.bg-orange-gradient {
+    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--light-orange) 100%);
+}
+
+.bg-off-white {
+    background-color: var(--off-white);
+}
+
+/* Text Colors */
+.text-orange {
+    color: var(--primary-orange);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+/* Borders */
+.border-orange {
+    border-color: var(--primary-orange);
+}
+
+/* Navigation */
+.nav-link {
+    color: var(--text-dark);
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--primary-orange);
+}
+
+.active-link {
+    color: var(--primary-orange);
+    font-weight: 600;
 }
