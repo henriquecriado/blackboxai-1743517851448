@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Notícias Hoje</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-newspaper text-blue-600 text-2xl"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Notícias Hoje</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="news.html" class="text-gray-600 hover:text-blue-600">Notícias</a>
+                    <a href="about.html" class="text-blue-600 font-medium">Sobre</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contato</a>
+                </nav>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12">
+        <div class="container mx-auto px-4">
+            <!-- Page Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Nós</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Conheça nossa história, missão e equipe por trás do Notícias Hoje</p>
+            </div>
+
+            <!-- About Sections -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Nossa História</h3>
+                    <p class="text-gray-600 mb-4">Fundado em 2010, o Notícias Hoje surgiu da necessidade de trazer informações confiáveis e imparciais para o público brasileiro. Começamos como um pequeno blog e hoje somos um dos portais de notícias mais acessados do país.</p>
+                    <p class="text-gray-600">Ao longo dos anos, investimos em tecnologia e em uma equipe de jornalistas experientes para garantir a qualidade e a precisão de nosso conteúdo.</p>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/400?random=14" alt="Nossa equipe" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="order-1 md:order-2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Nossa Missão</h3>
+                    <p class="text-gray-600 mb-4">Nosso objetivo é informar com ética, transparência e responsabilidade, contribuindo para uma sociedade mais consciente e democrática.</p>
+                    <p class="text-gray-600">Acreditamos no jornalismo como um serviço público essencial para o exercício da cidadania.</p>
+                </div>
+                <div class="order-2 md:order-1">
+                    <img src="https://picsum.photos/600/400?random=15" alt="Nossa missão" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Nossos Valores</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Precisão</h4>
+                        <p class="text-gray-600">Compromisso com a verificação rigorosa de fatos e dados</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-balance-scale text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Imparcialidade</h4>
+                        <p class="text-gray-600">Apresentação equilibrada de diferentes perspectivas</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Ética</h4>
+                        <p class="text-gray-600">Conduta profissional baseada nos princípios jornalísticos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Nossa Equipe</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://picsum.photos/400/400?random=16" alt="Team member" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-1">Ana Beatriz</h4>
+                            <p class="text-blue-600 mb-3">Editora-chefe</p>
+                            <p class="text-gray-600">Com mais de 15 anos de experiência em jornalismo, Ana lidera nossa equipe editorial.</p>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://picsum.photos/400/400?random=17" alt="Team member" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-1">Carlos Mendes</h4>
+                            <p class="text-blue-600 mb-3">Repórter político</p>
+                            <p class="text-gray-600">Especializado em cobertura política, Carlos traz análises profundas sobre o cenário nacional.</p>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://picsum.photos/400/400?random=18" alt="Team member" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-1">Juliana Almeida</h4>
+                            <p class="text-blue-600 mb-3">Repórter de economia</p>
+                            <p class="text-gray-600">Com formação em economia, Juliana simplifica temas complexos para nossos leitores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-blue-600 text-white rounded-lg p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">Tem alguma dúvida ou sugestão?</h3>
+                <p class="mb-6 max-w-2xl mx-auto">Nossa equipe está sempre disponível para ouvir nossos leitores e melhorar nosso trabalho.</p>
+                <a href="contact.html" class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Entre em contato</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Notícias Hoje</h3>
+                    <p class="text-gray-400">O seu portal de notícias confiável e atualizado.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-white">Notícias</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Sobre</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Categorias</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Economia</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Esportes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tecnologia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Notícias Hoje. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
